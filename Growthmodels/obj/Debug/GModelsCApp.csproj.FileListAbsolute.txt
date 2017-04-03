@@ -1,0 +1,12 @@
+C:\Users\Fernando\Documents\visual studio 2013\Projects\GModelsCApp\Growthmodels\bin\Debug\GModelsCApp.xml
+C:\Users\Fernando\Documents\visual studio 2013\Projects\GModelsCApp\Growthmodels\bin\Debug\GModelsCApp.dll
+C:\Users\Fernando\Documents\visual studio 2013\Projects\GModelsCApp\Growthmodels\bin\Debug\GModelsCApp.pdb
+C:\Users\Fernando\Documents\visual studio 2013\Projects\GModelsCApp\Growthmodels\obj\Debug\GModelsCApp.dll
+C:\Users\Fernando\Documents\visual studio 2013\Projects\GModelsCApp\Growthmodels\obj\Debug\GModelsCApp.pdb
+C:\Users\Fernando\Documents\visual studio 2013\Projects\GModelsCApp\Growthmodels\obj\Debug\GModelsCApp.csprojResolveAssemblyReference.cache
+D:\Desarrollos\GModelsCApp\Growthmodels\bin\Debug\GModelsCApp.xml
+D:\Desarrollos\GModelsCApp\Growthmodels\bin\Debug\GModelsCApp.dll
+D:\Desarrollos\GModelsCApp\Growthmodels\bin\Debug\GModelsCApp.pdb
+D:\Desarrollos\GModelsCApp\Growthmodels\obj\Debug\GModelsCApp.csprojResolveAssemblyReference.cache
+D:\Desarrollos\GModelsCApp\Growthmodels\obj\Debug\GModelsCApp.dll
+D:\Desarrollos\GModelsCApp\Growthmodels\obj\Debug\GModelsCApp.pdb

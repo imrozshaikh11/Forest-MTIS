@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Growthmodels</name>
+    </assembly>
+    <members>
+        <member name="M:Growthmodels.FModels.gamma(System.Double)">
+            <summary>
+            Returns the gamma function of the specified number.
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Growthmodels.FModels.stirf(System.Double)">
+            <summary>
+            Return the gamma function computed by Stirling's formula.
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Growthmodels.FModels.polevl(System.Double,System.Double[],System.Int32)">
+            <summary>
+            Evaluates polynomial of degree N
+            </summary>
+            <param name="x"></param>
+            <param name="coef"></param>
+            <param name="N"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Growthmodels.FModels.PPinaster">
+            <summary> Dinamic growth model for Pinus pinaster </summary>
+        </member>
+        <member name="M:Growthmodels.FModels.PPinaster.InicG(System.Double,System.Double,System.Byte)">
+            <summary> InicG: Initialized Basal Area (m2/ha)</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="I"> Dummy variable (I) is equal to 0 for Pinus pinaster coast variety and 1 for interior variety.</param>
+            <param name="t1"> Actual age (years) </param>
+            <param name="G"> Basal area (m2/ha) </param>
+        </member>
+        <member name="M:Growthmodels.FModels.PPinaster.G1(System.Double,System.Double,System.Double,System.Byte)">
+            <summary> G1: Simulate the Basal Area in an age in the future</summary>
+            <param name="I"> Dummy variable (I) is equal to 0 for Pinus pinaster coast variety and 1 for interior variety.</param>
+            <param name="t1"> Actual age (years) </param>
+            <param name="t2"> Age in the future to simulate the growth in volume (years)</param>
+            <param name="G0"> Actual Basal area (m2/ha) </param>
+        </member>
+        <member name="M:Growthmodels.FModels.PPinaster.VCC(System.Double,System.Double,System.Double,System.Byte)">
+            <summary> VCC: Volume with cork (m3/ha)</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Number of tree per hectare (ud/ha)</param>
+            <param name="I"> Dummy variable (I) is equal to 0 for Pinus pinaster coast variety and 1 for interior variety.</param>
+            <param name="G"> Basal area (m2/ha) </param>
+        </member>
+        <member name="M:Growthmodels.FModels.PPinaster.VCC(System.Double,System.Double,System.Byte,System.Double,System.Double,System.Double)">
+            <summary> VCC: Simulate the volume with cork (m3/ha) to an age in future</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Number of tree per hectare (ud/ha)</param>
+            <param name="I"> Dummy variable (I) is equal to 0 for Pinus pinaster coast variety and 1 for interior variety.</param>
+            <param name="t1"> Actual age (years) </param>
+            <param name="t2"> Age in the future to simulate the growth in volume (years).  </param>
+            <param name="G"> Basal area (m2/ha) </param>
+        </member>
+        <member name="M:Growthmodels.FModels.PPinaster.VCC(System.Double,System.Double,System.Byte,System.Double,System.Double)">
+            <summary> VCC: Simulate the volume with cork (m3/ha) to an age in future</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Number of tree per hectare (ud/ha)</param>
+            <param name="I"> Dummy variable (I) is equal to 0 for Pinus pinaster coast variety and 1 for interior variety.</param>
+            <param name="t"> Actual age (years) </param>
+            <param name="G"> Basal area (m2/ha) </param>
+        </member>
+        <member name="M:Growthmodels.FModels.PPinaster.W(System.Double,System.Double,System.Double,System.Byte)">
+            <summary> W: Total biomass weight with cork (tons) </summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Number of tree per hectare (ud/ha)</param>
+            <param name="G"> Basal area (m2/ha) </param>
+            <param name="I"> Dummy variable (I) is equal to 0 for Pinus pinaster coast variety and 1 for interior variety.</param>
+        </member>
+        <member name="M:Growthmodels.FModels.Thinningclass.thinningDesign(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> thinningDesign: </summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Mass Density (trees/ha) </param>
+            <param name="G"> Basal Area (m2/ha) </param>
+            <param name="t"> Age (years) </param>
+             <param name="modeld_dd"> model = 1: Ulises et al 2009; model = 2: Fonseca 2004 (Regular); model = 3 Fonseca 2004 (Irregular) </param>
+             <param name="modelh_d"> model = 1: Ulises et al 2009; model = 2: Fonseca 2004; model = 3 National Inventory 5 </param>
+             <param name="CD_range"> Range od diametral classes </param>
+            <param name="lowerthinning"> Number of trees to extract usen lower thinning (trees/ ha) </param>
+              <param name="systhinnig"> Number of trees to extract usen systematic thinning (trees/ ha) </param>
+        </member>
+    </members>
+</doc>

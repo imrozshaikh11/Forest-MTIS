@@ -1,0 +1,10 @@
+c:\users\fernando\documents\visual studio 2013\Projects\Growthmodels\Growthmodels\bin\Debug\Growthmodels.dll
+c:\users\fernando\documents\visual studio 2013\Projects\Growthmodels\Growthmodels\bin\Debug\Growthmodels.pdb
+c:\users\fernando\documents\visual studio 2013\Projects\Growthmodels\Growthmodels\obj\Debug\Growthmodels.dll
+c:\users\fernando\documents\visual studio 2013\Projects\Growthmodels\Growthmodels\obj\Debug\Growthmodels.pdb
+C:\Users\Fernando\documents\visual studio 2013\Projects\Growthmodels\Growthmodels\bin\Debug\Growthmodels.XML
+C:\Users\Fernando\Documents\visual studio 2013\Projects\GModelsCApp\Growthmodels\bin\Debug\GModelsCApp.xml
+C:\Users\Fernando\Documents\visual studio 2013\Projects\GModelsCApp\Growthmodels\bin\Debug\GModelsCApp.dll
+C:\Users\Fernando\Documents\visual studio 2013\Projects\GModelsCApp\Growthmodels\bin\Debug\GModelsCApp.pdb
+C:\Users\Fernando\Documents\visual studio 2013\Projects\GModelsCApp\Growthmodels\obj\Debug\GModelsCApp.dll
+C:\Users\Fernando\Documents\visual studio 2013\Projects\GModelsCApp\Growthmodels\obj\Debug\GModelsCApp.pdb

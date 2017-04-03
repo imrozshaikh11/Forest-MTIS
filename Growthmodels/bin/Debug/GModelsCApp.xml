@@ -1,0 +1,376 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GModelsCApp</name>
+    </assembly>
+    <members>
+        <member name="T:Growthmodels.FModels">
+            <summary> FModels: Forest Growth Models</summary>
+        </member>
+        <member name="M:Growthmodels.FModels.gamma(System.Double)">
+            <summary>
+            Returns the gamma function of the specified number.
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Growthmodels.FModels.stirf(System.Double)">
+            <summary>
+            Return the gamma function computed by Stirling's formula.
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Growthmodels.FModels.polevl(System.Double,System.Double[],System.Int32)">
+            <summary>
+            Evaluates polynomial of degree N
+            </summary>
+            <param name="x"></param>
+            <param name="coef"></param>
+            <param name="N"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Growthmodels.FModels.GrowthEquationsModel1">
+            <summary> Dinamic growth model for Model1</summary>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel1.Ht1_t2(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> TransH: Transition H0 equation</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="t1"> Actual age (years) </param>
+            <param name="t2"> Age to the future(years) </param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel1.InicG(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> InicG: Initialized Basal Area (m2/ha)</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="t1"> Actual age (years) </param>
+            <param name="t2"> Age to the future(years) </param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel1.Gt1_t2(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> G1: Simulate the Basal Area in an age in the future</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="t1"> Actual age (years) </param>
+            <param name="t2"> Age to the future(years) </param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel1.MaxN(System.Double,System.Double)">
+            <summary> Nmax: alometric model, Max density</summary>
+            <param name="N"> Density </param>
+            <param name="G"> Basal Area </param>m>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel1.Nt1_t2(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> Mortality equation</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="t1"> Actual age (years) </param>
+            <param name="t2"> Age to the future(years) </param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>m>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel1.VCC(System.Double,System.Double,System.Double)">
+            <summary> VCC: Volume with cork (m3/ha)</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel1.W(System.Double,System.Double,System.Double)">
+            <summary> W: Total biomass weight with cork (tons) </summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel1.H0_tRef(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> H1: Dominant height (m) at t2</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="t1"> Actual age (years) </param>
+            <param name="t2"> Age to the future(years) </param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel1.VCC(System.Double,System.Double,System.Double,System.Double)">
+            <summary> VCC: Simulate the volume with cork (m3/ha) to an age in future</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Number of tree per hectare (ud/ha)</param>
+            <param name="I"> Dummy variable (I) is equal to 0 for Pinus pinaster coast variety and 1 for interior variety.</param>
+            <param name="t"> Actual age (years) </param>
+            <param name="G"> Basal area (m2/ha) </param>
+        </member>
+        <member name="T:Growthmodels.FModels.GrowthEquationsModel2">
+            <summary> Dinamic growth model for Model1</summary>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel2.Ht1_t2(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> TransH: Transition H0 equation</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="t1"> Actual age (years) </param>
+            <param name="t2"> Age to the future(years) </param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel2.InicG(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> InicG: Initialized Basal Area (m2/ha)</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="t1"> Actual age (years) </param>
+            <param name="t2"> Age to the future(years) </param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel2.Gt1_t2(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> G1: Simulate the Basal Area in an age in the future</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="t1"> Actual age (years) </param>
+            <param name="t2"> Age to the future(years) </param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel2.MaxN(System.Double,System.Double)">
+            <summary> Nmax: alometric model, Max density</summary>
+            <param name="N"> Density </param>
+            <param name="G"> Basal Area </param>m>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel2.Nt1_t2(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> Mortality equation</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="t1"> Actual age (years) </param>
+            <param name="t2"> Age to the future(years) </param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>m>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel2.VCC(System.Double,System.Double,System.Double)">
+            <summary> VCC: Volume with cork (m3/ha)</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel2.W(System.Double,System.Double,System.Double)">
+            <summary> W: Total biomass weight with cork (tons) </summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel2.H0_tRef(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> H1: Dominant height (m) at t2</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="t1"> Actual age (years) </param>
+            <param name="t2"> Age to the future(years) </param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel2.VCC(System.Double,System.Double,System.Double,System.Double)">
+            <summary> VCC: Simulate the volume with cork (m3/ha) to an age in future</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Number of tree per hectare (ud/ha)</param>
+            <param name="I"> Dummy variable (I) is equal to 0 for Pinus pinaster coast variety and 1 for interior variety.</param>
+            <param name="t"> Actual age (years) </param>
+            <param name="G"> Basal area (m2/ha) </param>
+        </member>
+        <member name="T:Growthmodels.FModels.GrowthEquationsModel3">
+            <summary> Dinamic growth model for Model1</summary>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel3.Ht1_t2(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> TransH: Transition H0 equation</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="t1"> Actual age (years) </param>
+            <param name="t2"> Age to the future(years) </param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel3.InicG(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> InicG: Initialized Basal Area (m2/ha)</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="t1"> Actual age (years) </param>
+            <param name="t2"> Age to the future(years) </param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel3.Gt1_t2(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> G1: Simulate the Basal Area in an age in the future</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="t1"> Actual age (years) </param>
+            <param name="t2"> Age to the future(years) </param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel3.MaxN(System.Double,System.Double)">
+            <summary> Nmax: alometric model, Max density</summary>
+            <param name="N"> Density </param>
+            <param name="G"> Basal Area </param>m>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel3.Nt1_t2(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> Mortality equation</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="t1"> Actual age (years) </param>
+            <param name="t2"> Age to the future(years) </param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>m>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel3.VCC(System.Double,System.Double,System.Double)">
+            <summary> VCC: Volume with cork (m3/ha)</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel3.W(System.Double,System.Double,System.Double)">
+            <summary> W: Total biomass weight with cork (tons) </summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel3.H0_tRef(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> H1: Dominant height (m) at t2</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="t1"> Actual age (years) </param>
+            <param name="t2"> Age to the future(years) </param>
+            <param name="N"> Initial density </param>
+            <param name="G"> Initial Basal Area </param>
+        </member>
+        <member name="M:Growthmodels.FModels.GrowthEquationsModel3.VCC(System.Double,System.Double,System.Double,System.Double)">
+            <summary> VCC: Simulate the volume with cork (m3/ha) to an age in future</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Number of tree per hectare (ud/ha)</param>
+            <param name="I"> Dummy variable (I) is equal to 0 for Pinus pinaster coast variety and 1 for interior variety.</param>
+            <param name="t"> Actual age (years) </param>
+            <param name="G"> Basal area (m2/ha) </param>
+        </member>
+        <member name="T:Growthmodels.FModels.ThinningclassModel1">
+            <summary> thinningClass: Thinning design class model</summary>
+        </member>
+        <member name="M:Growthmodels.FModels.ThinningclassModel1.Avdg(System.Double)">
+            <summary> Avdg: relation average d - cuadratic diameter</summary>
+            <param name="dg"> Cuadratic diameter (cm) </param>
+        </member>
+        <member name="M:Growthmodels.FModels.ThinningclassModel1.H(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> H2: relation d - H</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Mass Density (trees/ha) </param>
+            <param name="d"> Diameter (cm) </param>
+            <param name="d0"> Dominant diameter (cm) </param>
+              <param name="t"> Actual age </param>
+        </member>
+        <member name="M:Growthmodels.FModels.ThinningclassModel1.vcc(System.Double,System.Double)">
+            <summary> vcc: individual volume with cork (m3/tree)</summary>
+            <param name="d"> individual diameter (cm) </param>
+            <param name="d0"> individual height (cm) </param>
+        </member>
+        <member name="M:Growthmodels.FModels.ThinningclassModel1.thinningDesign(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> thinningDesign: </summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Mass Density (trees/ha) </param>
+            <param name="G"> Basal Area (m2/ha) </param>
+            <param name="t"> Age (years) </param>
+             <param name="CD_range"> Range od diametral classes </param>
+            <param name="lowerthinning"> Number of trees to extract usen lower thinning (trees/ ha) </param>
+              <param name="systhinnig"> Number of trees to extract usen systematic thinning (trees/ ha) </param>
+        </member>
+        <member name="M:Growthmodels.FModels.ThinningclassModel1.C(System.Double,System.Double,System.Double)">
+            <summary>C: parameter </summary>
+            <param name="goal"> goal</param>
+            <param name="avgd"> average diameter </param>
+            <param name="error"> error </param>
+        </member>
+        <member name="M:Growthmodels.FModels.ThinningclassModel1.F(System.Double,System.Double,System.Double)">
+            <summary> F: factor F </summary>
+            <param name="d"> Factor d</param>
+            <param name="b"> Factor b </param>
+            <param name="c"> Factor c </param>
+        </member>
+        <member name="T:Growthmodels.FModels.ThinningclassModel2">
+            <summary> thinningClass: Thinning design class model</summary>
+        </member>
+        <member name="M:Growthmodels.FModels.ThinningclassModel2.Avdg(System.Double)">
+            <summary> Avdg: relation average d - cuadratic diameter</summary>
+            <param name="dg"> Cuadratic diameter (cm) </param>
+        </member>
+        <member name="M:Growthmodels.FModels.ThinningclassModel2.H(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> H2: relation d - H</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Mass Density (trees/ha) </param>
+            <param name="d"> Diameter (cm) </param>
+            <param name="d0"> Dominant diameter (cm) </param>
+              <param name="t"> Actual age </param>
+        </member>
+        <member name="M:Growthmodels.FModels.ThinningclassModel2.vcc(System.Double,System.Double)">
+            <summary> vcc: individual volume with cork (m3/tree)</summary>
+            <param name="d"> individual diameter (cm) </param>
+            <param name="d0"> individual height (cm) </param>
+        </member>
+        <member name="M:Growthmodels.FModels.ThinningclassModel2.thinningDesign(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> thinningDesign: </summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Mass Density (trees/ha) </param>
+            <param name="G"> Basal Area (m2/ha) </param>
+            <param name="t"> Age (years) </param>
+             <param name="CD_range"> Range od diametral classes </param>
+            <param name="lowerthinning"> Number of trees to extract usen lower thinning (trees/ ha) </param>
+              <param name="systhinnig"> Number of trees to extract usen systematic thinning (trees/ ha) </param>
+        </member>
+        <member name="M:Growthmodels.FModels.ThinningclassModel2.C(System.Double,System.Double,System.Double)">
+            <summary>C: parameter </summary>
+            <param name="goal"> goal</param>
+            <param name="avgd"> average diameter </param>
+            <param name="error"> error </param>
+        </member>
+        <member name="M:Growthmodels.FModels.ThinningclassModel2.F(System.Double,System.Double,System.Double)">
+            <summary> F: factor F </summary>
+            <param name="d"> Factor d</param>
+            <param name="b"> Factor b </param>
+            <param name="c"> Factor c </param>
+        </member>
+        <member name="T:Growthmodels.FModels.ThinningclassModel3">
+            <summary> thinningClass: Thinning design class model</summary>
+        </member>
+        <member name="M:Growthmodels.FModels.ThinningclassModel3.Avdg(System.Double)">
+            <summary> Avdg: relation average d - cuadratic diameter</summary>
+            <param name="dg"> Cuadratic diameter (cm) </param>
+        </member>
+        <member name="M:Growthmodels.FModels.ThinningclassModel3.H(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> H2: relation d - H</summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Mass Density (trees/ha) </param>
+            <param name="d"> Diameter (cm) </param>
+            <param name="d0"> Dominant diameter (cm) </param>
+              <param name="t"> Actual age </param>
+        </member>
+        <member name="M:Growthmodels.FModels.ThinningclassModel3.vcc(System.Double,System.Double)">
+            <summary> vcc: individual volume with cork (m3/tree)</summary>
+            <param name="d"> individual diameter (cm) </param>
+            <param name="d0"> individual height (cm) </param>
+        </member>
+        <member name="M:Growthmodels.FModels.ThinningclassModel3.thinningDesign(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary> thinningDesign: </summary>
+            <param name="H0"> Dominant height (m).</param>
+            <param name="N"> Mass Density (trees/ha) </param>
+            <param name="G"> Basal Area (m2/ha) </param>
+            <param name="t"> Age (years) </param>
+             <param name="CD_range"> Range od diametral classes </param>
+            <param name="lowerthinning"> Number of trees to extract usen lower thinning (trees/ ha) </param>
+              <param name="systhinnig"> Number of trees to extract usen systematic thinning (trees/ ha) </param>
+        </member>
+        <member name="M:Growthmodels.FModels.ThinningclassModel3.C(System.Double,System.Double,System.Double)">
+            <summary>C: parameter </summary>
+            <param name="goal"> goal</param>
+            <param name="avgd"> average diameter </param>
+            <param name="error"> error </param>
+        </member>
+        <member name="M:Growthmodels.FModels.ThinningclassModel3.F(System.Double,System.Double,System.Double)">
+            <summary> F: factor F </summary>
+            <param name="d"> Factor d</param>
+            <param name="b"> Factor b </param>
+            <param name="c"> Factor c </param>
+        </member>
+        <member name="T:Growthmodels.FModels.SiteClass">
+            <summary> SiteClass: Site class model</summary>
+        </member>
+        <member name="T:Growthmodels.FModels.Thinning">
+            <summary> Thinning: Thinning Class model</summary>
+        </member>
+        <member name="T:Growthmodels.FModels.ThinningApp">
+            <summary> ThinningApp: Thinning applications model</summary>
+        </member>
+        <member name="T:Growthmodels.FModels.Thinningmanagement">
+            <summary> Thinningmanagement: Thinning applications list model</summary>
+        </member>
+    </members>
+</doc>
